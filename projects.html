@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Maverick - MavJS.org</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="static/css/flat-ui.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <style>
+        body {
+            word-wrap: break-word;
+            margin-top: 60px;
+        }
+        #dashed {
+            font-size: 16px;
+        }
+    </style>
+  </head>
+    <body>
+        <div class="row-fluid">
+            <!-- navbar -->
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse-01"></button>
+                        <div class="nav-collapse collapse" id="nav-collapse-01">
+                            <ul class="nav">
+                                <li>
+                                    <a href="index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="projects.html">Projects</a>
+                                </li>
+                                <li>
+                                <a href="blog.mavjs.org">Blog</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- navbar -->
+
+            <!-- content -->
+            <div class="container">
+                <h1>Maverick's Projects <span id="dashed">&mdash; done for pleasure and or profit.</span></h1>
+                <hr />
+                <div class="well">
+                    <h3>UCTI Timetable Downloader</h3>
+                    <ul>
+                        <li><a href="https://github.com/mavjs/ucti-timetable">https://github.com/mavjs/ucti-timetable</a></li>
+                        <li>Timetable Downloader with and without GUI for <a class="external-link" href="http://apu.edu.my/">Asia Pacific University of Technology</a> (UCTI previously).</li>
+                    </ul>
+                </div>
+                <div class="well">
+                    <h3>APUTimeTable</h3>
+                    <ul>
+                        <li>A class to interact with APU (a.k.a UCTI) Timetable systems.</li>
+                        <li><a href="https://github.com/mavjs/APUTimeTable">https://github.com/mavjs/APUTimeTable</a></li>
+                        <li>It can generate .ics and .html files for use in apps. See the demo <a href="https://github.com/mavjs/APUTimeTable/blob/master/test.py"><i>test.py</i></a> file.</li>
+                    </ul>
+                </div>
+                <div class="well">
+                    <h3>ProcAnalyst</h3>
+                    <ul>
+                        <li>A web.py web app to list basic system info and process list.</li>
+                        <li><a href="https://github.com/mavjs/ProcAnalyst">https://github.com/mavjs/ProcAnalyst</a></li>
+                        <li>It reads different configuration options from config.ini and also has a script to send email about the processes.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- content -->
+        </div>
+    </body>
+</html>
