@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 
     <!-- Loading Bootstrap -->
-    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Loading Flat UI -->
-    <link href="static/css/flat-ui.css" rel="stylesheet">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="static/images/favicon.ico">
 
@@ -17,13 +14,13 @@
     <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
     <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <style>
         body {
             word-wrap: break-word;
-            margin-top: 60px;
+            margin-top: 50px;
+            padding: 10px;
         }
         #dashed {
             font-size: 16px;
@@ -35,62 +32,68 @@
     </style>
   </head>
     <body>
-        <div class="row-fluid">
-            <!-- navbar -->
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse-01"></button>
-                        <div class="nav-collapse collapse" id="nav-collapse-01">
-                            <ul class="nav">
-                                <li>
-                                    <a href="index.html">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="active">
-                                    <a href="projects.html">Projects</a>
-                                </li>
-                                <li>
-                                <a href="http://blog.mavjs.org">Blog</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <!-- navbar -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <!-- container -->
+            <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MavJS.ORG</a>
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="http://blog.mavjs.org">Blog</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+            <!-- container -->
         </div>
         <!-- navbar -->
 
         <!-- content -->
-        <div class="container">
-            <h1>Maverick's Projects <span id="dashed">&mdash; done for pleasure and or profit.</span></h1>
-            <hr />
-            <span id="vert"><strong>Like what I do?</strong></span> <iframe style="border: 0; margin: 0; padding: 0;" src="https://www.gittip.com/mavjs/widget.html" width="48pt" height="22pt"></iframe>
-            <div class="well">
-                <h3>UCTI Timetable Downloader</h3>
-                <ul>
-                    <li><a href="https://github.com/mavjs/ucti-timetable">https://github.com/mavjs/ucti-timetable</a></li>
-                    <li>Timetable Downloader with and without GUI for <a class="external-link" href="http://apu.edu.my/">Asia Pacific University of Technology</a> (UCTI previously).</li>
-                </ul>
-            </div>
-            <div class="well">
-                <h3>APUTimeTable</h3>
-                <ul>
-                    <li>A class to interact with APU (a.k.a UCTI) Timetable systems.</li>
-                    <li><a href="https://github.com/mavjs/APUTimeTable">https://github.com/mavjs/APUTimeTable</a></li>
-                    <li>It can generate .ics and .html files for use in apps. See the demo <a href="https://github.com/mavjs/APUTimeTable/blob/master/test.py"><i>test.py</i></a> file.</li>
-                </ul>
-            </div>
-            <div class="well">
-                <h3>ProcAnalyst</h3>
-                <ul>
-                    <li>A web.py web app to list basic system info and process list.</li>
-                    <li><a href="https://github.com/mavjs/ProcAnalyst">https://github.com/mavjs/ProcAnalyst</a></li>
-                    <li>It reads different configuration options from config.ini and also has a script to send email about the processes.</li>
-                </ul>
+        <div class="row-fluid">
+            <div class="container">
+                <h1>Maverick's Projects <span id="dashed">&mdash; done for pleasure and or profit.</span></h1>
+                <hr />
+                <span id="vert"><strong>Like what I do?</strong></span> <iframe style="border: 0; margin: 0; padding: 0;" src="https://www.gittip.com/mavjs/widget.html" width="48pt" height="22pt"></iframe>
+                <div class="well">
+                    <h3>UCTI Timetable Downloader</h3>
+                    <ul>
+                        <li><a href="https://github.com/mavjs/ucti-timetable">https://github.com/mavjs/ucti-timetable</a></li>
+                        <li>Timetable Downloader with and without GUI for <a class="external-link" href="http://apu.edu.my/">Asia Pacific University of Technology</a> (UCTI previously).</li>
+                    </ul>
+                </div>
+                <div class="well">
+                    <h3>APUTimeTable</h3>
+                    <ul>
+                        <li>A class to interact with APU (a.k.a UCTI) Timetable systems.</li>
+                        <li><a href="https://github.com/mavjs/APUTimeTable">https://github.com/mavjs/APUTimeTable</a></li>
+                        <li>It can generate .ics and .html files for use in apps. See the demo <a href="https://github.com/mavjs/APUTimeTable/blob/master/test.py"><i>test.py</i></a> file.</li>
+                    </ul>
+                </div>
+                <div class="well">
+                    <h3>ProcAnalyst</h3>
+                    <ul>
+                        <li>A web.py web app to list basic system info and process list.</li>
+                        <li><a href="https://github.com/mavjs/ProcAnalyst">https://github.com/mavjs/ProcAnalyst</a></li>
+                        <li>It reads different configuration options from config.ini and also has a script to send email about the processes.</li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <script src="static/js/bootstrap.js"></script>
         <!-- content -->
     </body>
 </html>

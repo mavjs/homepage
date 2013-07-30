@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 
     <!-- Loading Bootstrap -->
-    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Loading Flat UI -->
-    <link href="static/css/flat-ui.css" rel="stylesheet">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="static/images/favicon.ico">
 
@@ -17,13 +14,13 @@
     <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
     <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <style>
         body {
             word-wrap: break-word;
-            margin-top: 60px;
+            margin-top: 50px;
+            padding: 10px;
         }
         #hacker {
             padding: 3px;
@@ -35,66 +32,72 @@
     </style>
   </head>
     <body>
-        <div class="row-fluid">
-            <!-- navbar -->
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="navbar-inner">
-                    <div class="container">
-                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse-01"></button>
-                        <div class="nav-collapse collapse" id="nav-collapse-01">
-                            <ul class="nav">
-                                <li class="active">
-                                    <a href="index.html">
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="projects.html">Projects</a>
-                                </li>
-                                <li>
-                                    <a href="http://blog.mavjs.org">Blog</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <!-- navbar -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <!-- container -->
+            <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MavJS.ORG</a>
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="http://blog.mavjs.org">Blog</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+            <!-- container -->
         </div>
-            <!-- navbar -->
+        <!-- navbar -->
 
         <!-- content -->
-        <div class="container">
-            <h1>About Maverick</h1>
-            <hr />
-            <div id="hacker">
-                <span id="vert"><strong>Like what I do?</strong></span> <iframe style="border: 0; margin: 0; padding: 0;" src="https://www.gittip.com/mavjs/widget.html" width="48pt" height="22pt"></iframe>
-                <br />
-                <img src="static/images/hacker-python.png" height="150px" width="150px"/>
+        <div class="row-fluid">
+            <div class="container">
+                <h1>About Maverick</h1>
+                <hr />
+                <div id="hacker">
+                    <span id="vert"><strong>Like what I do?</strong></span> <iframe style="border: 0; margin: 0; padding: 0;" src="https://www.gittip.com/mavjs/widget.html" width="48pt" height="22pt"></iframe>
+                    <br />
+                    <img src="static/images/hacker-python.png" height="150px" width="150px"/>
+                </div>
+                <p>Tech enthusiast, lover of *nix systems, likes Free/Libre &amp; Open Source Software. A Programmer,</p>
+                <p>(sometimes) web developer, an information security analyst wannabe from Myanmar (Burma).</p>
+                <p>An undergraduate IT student specializing in Information System Security at&nbsp;<a class="text external" href="https://en.wikipedia.org/wiki/APIIT">APU</a>.</p>
+                <p>I am a certified&nbsp;<i><strong>Green Computing User Specialist and Architect</strong></i> [Serial No:&nbsp;<strong>HC4J57</strong> - Verify here:&nbsp;<a class="autonumber external" href="http://www.sgauge.com/greenci/?q=node/79">[1]</a>]</p>
+                <p>Co-curator of&nbsp;<a class="text external" href="http://fedora.my/">Fedora.my</a> and&nbsp;<a class="text external" href="http://apprepo.org/">AppRepo</a>.</p>
+                <p>Currently "leading" the&nbsp;<a class="text external external-link" href="http://www.apuniversity.edu.my/">APU</a> FOSS Special Interest Group. And also a core member of the <a class="external-link" href="http://apu-csfc.github.com">APU Cyber Security and Forensics Club</a>. And participates in Capture The Flag security competitions with his team: <a class="external-link" href="http://www.gliderswirley.org">Glider Swirley</a>.</p>
+                <p>I'm a&nbsp;<a class="text external" href="https://fedoraproject.org/wiki/Ambassadors">Fedora Ambassador</a> for Malaysia/Myanmar (Got approved/sponsored on&nbsp;<a class="text external" href="http://kitall.blogspot.com/2012/04/fedora-ambassadors-welcome-week-182012.html">Fedora Ambassadors Welcome Week 18/2012</a>)</p>
+                <p>I volunteered in a lot of events. Namely:</p>
+                <ul>
+                    <li>#HITB2011KUL</li>
+                    <li>Fedora Users' and Developers' Conference (APAC) 2012</li>
+                    <li>#HITB2012KUL</li>
+                    <li>The World Congress on Computing and Information Technology (WCIT) 2013</li>
+                    <li>#HITB2013AMS</li>
+                </ul>
+                <p>I'm interested in programming in&nbsp;<a class="text external" href="http://python.org">Python</a> and delves into&nbsp;<a class="text external" href="https://plone.org">Plone</a>, <a class="external-link" href="http://www.pylonsproject.org/">Pyramid</a> web frameworks.</p>
+                <p>You can find me at the following:</p>
+                <ul>
+                    <li>Blog - <a class="text external" href="http://blog.mavjs.org">:: FLOSS Bytes ::</a></li>
+                    <li>Twitter - <a class="text external" href="https://twitter.com/mavjs">@mavjs</a></li>
+                    <li>Github - <a class="text external" href="https://github.com/mavjs">@mavjs</a></li>
+                </ul>
+                <p>GPG key: <a href="">mavjs.org.asc</a></p>
             </div>
-            <p>Tech enthusiast, lover of *nix systems, likes Free/Libre &amp; Open Source Software. A Programmer,</p>
-            <p>(sometimes) web developer, an information security analyst wannabe from Myanmar (Burma).</p>
-            <p>An undergraduate IT student specializing in Information System Security at&nbsp;<a class="text external" href="https://en.wikipedia.org/wiki/APIIT">APU</a>.</p>
-            <p>I am a certified&nbsp;<i><strong>Green Computing User Specialist and Architect</strong></i> [Serial No:&nbsp;<strong>HC4J57</strong> - Verify here:&nbsp;<a class="autonumber external" href="http://www.sgauge.com/greenci/?q=node/79">[1]</a>]</p>
-            <p>Co-curator of&nbsp;<a class="text external" href="http://fedora.my/">Fedora.my</a> and&nbsp;<a class="text external" href="http://apprepo.org/">AppRepo</a>.</p>
-            <p>Currently "leading" the&nbsp;<a class="text external external-link" href="http://www.apuniversity.edu.my/">APU</a> FOSS Special Interest Group. And also a core member of the <a class="external-link" href="http://apu-csfc.github.com">APU Cyber Security and Forensics Club</a>. And participates in Capture The Flag security competitions with his team: <a class="external-link" href="http://www.gliderswirley.org">Glider Swirley</a>.</p>
-            <p>I'm a&nbsp;<a class="text external" href="https://fedoraproject.org/wiki/Ambassadors">Fedora Ambassador</a> for Malaysia/Myanmar (Got approved/sponsored on&nbsp;<a class="text external" href="http://kitall.blogspot.com/2012/04/fedora-ambassadors-welcome-week-182012.html">Fedora Ambassadors Welcome Week 18/2012</a>)</p>
-            <p>I volunteered in a lot of events. Namely:</p>
-            <ul>
-                <li>#HITB2011KUL</li>
-                <li>Fedora Users' and Developers' Conference (APAC) 2012</li>
-                <li>#HITB2012KUL</li>
-                <li>The World Congress on Computing and Information Technology (WCIT) 2013</li>
-                <li>#HITB2013AMS</li>
-            </ul>
-            <p>I'm interested in programming in&nbsp;<a class="text external" href="http://python.org">Python</a> and delves into&nbsp;<a class="text external" href="https://plone.org">Plone</a>, <a class="external-link" href="http://www.pylonsproject.org/">Pyramid</a> web frameworks.</p>
-            <p>You can find me at the following:</p>
-            <ul>
-                <li>Blog - <a class="text external" href="http://blog.mavjs.org">:: FLOSS Bytes ::</a></li>
-                <li>Twitter - <a class="text external" href="https://twitter.com/mavjs">@mavjs</a></li>
-                <li>Github - <a class="text external" href="https://github.com/mavjs">@mavjs</a></li>
-            </ul>
-            <p>GPG key: <a href="">mavjs.org.asc</a></p>
         </div>
+        <script src="static/js/bootstrap.js"></script>
         <!-- content -->
     </body>
 </html>
