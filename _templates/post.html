@@ -1,0 +1,23 @@
+{% extends 'site.html' %}
+{% block title %}{{ item.title }}{% endblock %}
+{% block breadcrumbs %}
+    <ol class="breadcrumb">
+        <li><a href="{{ get_url('words/') }}">Words</a></li>
+        <li class="active">{{ item.title|truncate(75) }}</li>
+    </ol>
+{% endblock %}
+
+{% block content %}
+    <div class="page-header">
+        <h1>{{ item.title }} <small>{{ item.date }}</small></h1>
+    </div>
+    <h4>{% if item.tags %}
+            {% for tag in item.tags %}
+                <a href="{{ get_url(posts.tags[tag].url) }}"><span class="label label-success">{{ tag }}</span></a>
+                {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        {% endif %}
+    </h4>
+    <hr />
+    {{ item.content }}
+{% endblock %}

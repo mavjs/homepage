@@ -1,0 +1,33 @@
+{% extends 'site.html' %}
+{% block title %}{{ tag.name }} Archives{% endblock %}
+{% block breadcrumbs %}
+    <ol class="breadcrumb">
+        <li><a href="{{ get_url('words/') }}">Words</a></li>
+        <li><a href="{{ get_url('archives/') }}">Archives</a></li>
+        <li class="active">{{ tag.name }}</li>
+    </ol>
+{% endblock %}
+
+{% block content %}
+    {% for archive in tag.archives|values %}
+        <div class="page-header">
+            <h1><a href="{{ get_url(archive.url) }}">{{ archive.year }}</a></h1>
+        </div>
+            {% for month in archive.months|values %}
+                {%for post in month %}
+                    <h2>{{ post.timestamp|date('%d %b') }}</h2>
+                    <h3><a href="{{ get_url(post.url) }}">{{ post.title }}</a>
+                        <small>
+                            {% if post.tags %}
+                                <i class="fa fa-angle-double-right"></i>
+                                {% for tag in post.tags %}
+                                    <a href="{{ get_url(posts.tags[tag].url) }}"><span class="label label-success">{{ tag }}</span></a>
+                                        {% if not loop.last %} {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                        </small>
+                    </h3>
+                {% endfor %}
+            {% endfor %}
+    {% endfor %}
+{% endblock %}

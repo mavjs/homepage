@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Maverick - MavJS.ORG</title>
+    <subtitle>*nix, FLOSS, Infosec & Coding.</subtitle>
+    <link rel="alternate" href="http://www.mavjs.org/" />
+    <link rel="self" href="http://www.mavjs.org/feed.xml" type="application/atom+xml" />
+    <id>http://www.mavjs.org/</id>
+    <updated>2014-09-08T16:54:24Z</updated>
+    
+    <author>
+        <name>Maverick</name>
+        <email>me@mavjs.ninja</email>
+        <uri>http://www.mavjs.org/</uri>
+    </author>
+    
+    
+</feed>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}TITLE{% endblock %} - MavJS.ORG</title>
+
+        <!-- Begin meta stuff -->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+        {% if site.author %}<meta name="author" content="{{ site.author }}">{% endif %}
+        {% if site.description %}<meta name="description" content="{{ site.description }}">{% endif %}
+        <meta name="generator" content="mynt v{{ site.version }}">
+
+        <!-- Begin style stuff -->
+        <link rel="alternate" href="{{ get_url('feed.xml') }}" type="application/atom+xml">
+        <link rel="shortcut icon" href="{{ get_asset('images/favicon.ico') }}" type="image/x-icon">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic|Ubuntu+Mono:400,700,400italic,700italic" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/darkly/bootstrap.min.css" type="text/css">
+        {% if site.pygmentize %}<link rel="stylesheet" href="{{ get_asset('css/pygments.css') }}" type="text/css">{% endif %}
+        <link rel="stylesheet" href="{{ get_asset('css/main.css') }}" type="text/css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="sidebar"> 
+                    <ul class="nav nav-sidebar">
+                        <li><a href="{{ get_url('/') }}" title="Home"><i class="fa fa-home"></i></a></li>
+                        <li><a href="{{ get_url('words/') }}" title="Blog Posts"><i class="fa fa-file-text"></i></a></li>
+                        <li><a href="{{ get_url('about/') }}" title="About"><i class="fa fa-user"></i></a></li>
+                    </ul>
+                    <ul class="nav nav-sidebar">
+                        <li><a href="https://github.com/mavjs" title="Github" target="_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://twitter.com/mavjs" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mavjs" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                    </ul>
+                    <ul class="nav nav-sidebar">
+                        <li><a href="{{ get_url('archives/') }}" title="Archives"><i class="fa fa-archive"></i></a></li>
+                        <li><a href="{{ get_url('feed.xml') }}" title="Feed"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="main">
+                    {% block breadcrumbs %}{% endblock %}
+                    {% block content %}{% endblock %}
+                    <footer>
+                        <hr />
+                        &copy; <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> - {{ None|date('%Y') }} Maverick.
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <script src="{{ get_asset('js/mynt.min.js') }}" type="text/javascript"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+    </body>
+</html>
