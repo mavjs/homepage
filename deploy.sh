@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-rsync -rupazv _site/ searxgs:~/mavjs.org/
+rsync -rupazv *.html static searxgs:~/mavjs.org/
