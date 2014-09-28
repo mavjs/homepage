@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html metal:use-macro="load: root.pt">
+    <div metal:fill-slot="navbar">
+        <ul class="nav masthead-nav">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/about">About Me</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="http://blog.mavjs.org">Blog</a></li>
+        </ul>
+    </div>
+    <div metal:fill-slot="content">
+        <div class="inner-cover">
+            <h1 class="cover-heading">About Me</h1>
+            <p class="lead">Ye Myat Kaung, more commonly know as Maverick - is
+            a tech enthusiast, lover of *nix systems, likes Free/Libre
+            &amp; Open Source Software. A programmer, information/software/hardware
+            privacy &amp; security enthusiast.</p>
+        </div>
+    </div>
+</html>

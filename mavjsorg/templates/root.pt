@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MavJS.ORG - Home of Maverick from Burma.">
+    <meta name="author" content="Maverick">
+    <link rel="shortcut icon" href="${request.static_url('mavjsorg:static/pyramid-16x16.png')}">
+
+    <title>MavJS.ORG - Home of Maverick</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fontawesome core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this scaffold -->
+    <link href="${request.static_url('mavjsorg:static/cover.css')}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">MavJS.ORG</h3>
+                        <div metal:define-slot="navbar">
+                        </div>
+                    </div>
+                </div>
+                <div metal:define-slot="content">
+                </div>
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Copyright &copy; MavJS.ORG. All Rights Reserved.</p>
+                        <p>
+                            Fork from <a href="https://github.com/mavjs/homepage">GitHub</a>, 
+                            Icons by <a href="http://fontawesome.io/">Font Awesome</a>, 
+                            Made with <a href="http://getbootstrap.com">Bootstrap</a> 
+                            and <a href="http://pylonsproject.org">Pyramid</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </body>
+</html>

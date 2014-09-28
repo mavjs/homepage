@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html metal:use-macro="load: root.pt">
+    <div metal:fill-slot="navbar">
+        <ul class="nav masthead-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li class="active"><a href="/contact">Contact</a></li>
+            <li><a href="http://blog.mavjs.org">Blog</a></li>
+        </ul>
+    </div>
+    <div metal:fill-slot="content">
+        <div class="inner-cover">
+            <h1 class="cover-heading">Contact</h1>
+            <a href="https://github.com/mavjs" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+            <a href="https://twitter.com/mavjs" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/mavjs" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a><br /><br />
+            <p class="lead">
+            Email: <code>me [@] mavjs [dot] ninja</code><br />
+            GPG: <a href="http://hkps.pool.sks-keyservers.net/pks/lookup?op=vindex&search=0xD594FDDD"><code>F1FE 72C1 5937 BAF9 E5DB 1E6B D201 B058 D594 FDDD</code></a><br /><br />
+            Jabber: <code>mavjs@jabber.org</code><br />
+            OTR: <code>10A75E22 A826AB02 687DF7F9 9D568BBA 97760F30</code><br /><br />
+            </p>
+            <p class="lead">
+            I would appreciate any kind of <i>tip</i><br />
+            Bitcoin: <code>1LuUAHUzbZrjfkYjEtv5Qmt9NGTH8E7xnT</code><br />
+            Litecoin: <code>LQXXFPMd2VUNyN63meNwifxVHMzVHHKf3T</code><br />
+            Gratipay: <a href="https://gratipay.com/mavjs/"><code>https://gratipay.com/mavjs/</code></a>
+            </p>
+        </div>
+    </div>
+</html>
