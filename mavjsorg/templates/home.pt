@@ -1,0 +1,19 @@
+<html metal:use-macro="load: root.pt">
+    <div metal:fill-slot="navbar">
+        <ul class="nav masthead-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="http://blog.mavjs.org">Blog</a></li>
+        </ul>
+    </div>
+    <div metal:fill-slot="content">
+        <div class="inner-cover">
+            <h1 class="cover-heading">Maverick</h1>
+            <p class="lead">0xn00b - CTF player, coder, student from Burma.</p>
+            <p class="lead">
+            <a href="/about" class="btn btn-lg btn-default">More about Maverick</a>
+            </p>
+        </div>
+    </div>
+</html>
