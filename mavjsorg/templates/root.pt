@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="MavJS.ORG - Home of Maverick from Burma.">
     <meta name="author" content="Maverick">
-    <link rel="shortcut icon" href="${request.static_url('mavjsorg:static/pyramid-16x16.png')}">
+    <link rel="shortcut icon" href="${request.static_url('mavjsorg:static/favicon.ico')}">
 
     <title>MavJS.ORG - Home of Maverick</title>
 
